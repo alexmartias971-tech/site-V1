@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drift House — karting drift, billard et food truck à Petit-Bourg, Guadeloupe</title>
+<meta name="description" content="Le premier circuit 100 % drift de Guadeloupe. 1000 m² de glisse indoor à Roujol, Petit-Bourg : karts électriques dès 1 m 20, billard, food truck et nocturnes jusqu'à 1 h. Session 10 min à 15 €.">
+<meta name="theme-color" content="#120E24">
+<link rel="canonical" href="https://drifthousekarting.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Drift House">
+<meta property="og:title" content="Drift House — 100 % drift à Petit-Bourg">
+<meta property="og:description" content="1000 m² de glisse indoor, un billard, un food truck. Session 10 min à 15 €, nocturnes vendredi et samedi jusqu'à 1 h.">
+<meta property="og:image" content="assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsActivityLocation",
+  "name": "Drift House",
+  "description": "Circuit de karting drift indoor de 1000 m² avec billard et food truck.",
+  "url": "https://drifthousekarting.com/",
+  "telephone": "+590690525083",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Roujol",
+    "postalCode": "97170",
+    "addressLocality": "Petit-Bourg",
+    "addressRegion": "Guadeloupe",
+    "addressCountry": "GP"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 16.1793249, "longitude": -61.5900751 },
+  "sameAs": ["https://www.instagram.com/drifthousekarting/"],
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "14:00", "closes": "20:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "14:00", "closes": "01:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "01:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "10:00", "closes": "20:00" }
+  ],
+  "offers": { "@type": "Offer", "name": "Session de drift 10 minutes", "price": "15", "priceCurrency": "EUR" }
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="head" id="head">
+  <div class="head-in">
+    <a class="brand" href="#top" aria-label="Drift House, retour en haut">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 24" role="img"><path d="M2 20c8 0 10-16 19-16 7 0 12 5 17 5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-dasharray="7 5"/></svg>
+      </span>
+      <span class="brand-txt">Drift&nbsp;House</span>
+    </a>
+
+    <nav class="nav" aria-label="Sections du site">
+      <a href="#concept">Le drift</a>
+      <a href="#complexe">Le complexe</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#horaires">Horaires</a>
+      <a href="#acces">Accès</a>
+    </nav>
+
+    <p class="status" id="status" aria-live="polite">
+      <span class="status-dot" aria-hidden="true"></span><span id="status-txt">Horaires en cours de chargement</span>
+    </p>
+
+    <a class="btn btn-sm" href="tel:+590690525083">Réserver</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="hero-track" aria-hidden="true">
+    <svg viewBox="0 0 1200 760" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="fadeMark" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#000" stop-opacity=".05"/>
+          <stop offset=".35" stop-color="#000" stop-opacity=".55"/>
+          <stop offset="1" stop-color="#000" stop-opacity=".75"/>
+        </linearGradient>
+        <radialGradient id="spot" cx=".72" cy=".18" r=".72">
+          <stop offset="0" stop-color="#FFB224" stop-opacity=".15"/>
+          <stop offset="1" stop-color="#FFB224" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect width="1200" height="760" fill="url(#spot)"/>
+      <!-- trajectoire de drift : la gomme laissée au sol -->
+      <path id="trace" d="M-60 660 C 240 660 300 430 470 410 C 640 390 690 560 560 600 C 430 640 360 470 520 330 C 700 170 860 296 950 226"
+            fill="none" stroke="url(#fadeMark)" stroke-width="46" stroke-linecap="round" class="mark mark-soft"/>
+      <path d="M-60 676 C 240 676 300 446 470 426 C 640 406 690 576 560 616 C 430 656 360 486 520 346 C 700 186 860 312 950 242"
+            fill="none" stroke="url(#fadeMark)" stroke-width="12" stroke-linecap="round" class="mark mark-line"/>
+      <path d="M-60 640 C 240 640 300 410 470 390 C 640 370 690 540 560 580 C 430 620 360 450 520 310 C 700 150 860 276 950 206"
+            fill="none" stroke="url(#fadeMark)" stroke-width="12" stroke-linecap="round" class="mark mark-line mark-line-2"/>
+      <g id="kart" class="kart">
+        <g transform="scale(1.6) translate(-26,-16)">
+          <rect x="0" y="4" width="52" height="24" rx="8" fill="#FFB224"/>
+          <rect x="34" y="0" width="14" height="32" rx="5" fill="#0A0716"/>
+          <rect x="4" y="-1" width="12" height="34" rx="5" fill="#0A0716"/>
+          <circle cx="26" cy="16" r="5" fill="#120E24"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <div class="hero-in wrap">
+    <p class="hero-place">Roujol, Petit-Bourg — Guadeloupe</p>
+    <h1 class="hero-h1">
+      <span class="word" style="--i:0"><span>D</span><span>r</span><span>i</span><span>f</span><span>t</span></span>
+      <span class="word" style="--i:1"><span>H</span><span>o</span><span>u</span><span>s</span><span>e</span></span>
+    </h1>
+    <p class="hero-sub">Le premier circuit 100&nbsp;% drift de&nbsp;l'île. Et bien plus qu'une piste.</p>
+    <p class="hero-lede">1000&nbsp;m² de glisse indoor, un billard, un food truck et des nocturnes jusqu'à 1&nbsp;h du matin. La session de 10&nbsp;minutes est à 15&nbsp;€, casque et gants fournis.</p>
+    <div class="hero-cta">
+      <a class="btn" href="#tarifs">Voir les tarifs</a>
+      <a class="btn btn-ghost" href="#complexe">Visiter le complexe</a>
+    </div>
+    <p class="hero-note">Karts électriques à roues arrière pivotantes, accessibles dès 1&nbsp;m&nbsp;20.</p>
+  </div>
+</section>
+
+<!-- ================= CONCEPT ================= -->
+<section class="sec" id="concept">
+  <div class="wrap">
+    <div class="rule reveal" aria-hidden="true"></div>
+    <div class="two">
+      <div class="two-head">
+        <h2>Le drift, en trois gestes</h2>
+        <p class="lede">Un kart de drift ne se pilote pas comme un kart de vitesse. Les roues arrière pivotent à 360° et le moteur électrique délivre son couple d'un coup&nbsp;: l'arrière décroche quand vous le décidez, pas quand la piste en décide.</p>
+      </div>
+      <ol class="steps">
+        <li class="reveal">
+          <span class="steps-n" aria-hidden="true">1</span>
+          <h3>Vous vous installez</h3>
+          <p>Casque et gants fournis, chaussures fermées obligatoires. Un briefing de pilotage précède chaque départ, débutant ou habitué.</p>
+        </li>
+        <li class="reveal">
+          <span class="steps-n" aria-hidden="true">2</span>
+          <h3>Vous tirez la barre</h3>
+          <p>La barre de drift libère les roues arrière. L'arrière du kart part en travers&nbsp;: c'est là que la glisse commence.</p>
+        </li>
+        <li class="reveal">
+          <span class="steps-n" aria-hidden="true">3</span>
+          <h3>Vous tenez la glisse</h3>
+          <p>Contre-braquage, accélérateur, regard loin devant. Dix minutes suffisent pour sentir la trajectoire venir toute seule.</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LE COMPLEXE (plan interactif) ================= -->
+<section class="sec sec-plan" id="complexe">
+  <div class="wrap">
+    <div class="rule reveal" aria-hidden="true"></div>
+    <h2>Un complexe, pas seulement un circuit</h2>
+    <p class="lede lede-w">On vient pour la piste, on reste pour le reste. Billard, food truck et terrasse partagent le même hangar&nbsp;: la soirée se passe entière sur place, que vous pilotiez ou non.</p>
+
+    <div class="plan">
+      <div class="plan-map">
+        <svg viewBox="0 0 560 420" role="img" aria-label="Plan du complexe Drift House : piste de drift, zone d'apprentissage, billard, food truck et accueil.">
+          <rect x="8" y="8" width="544" height="404" rx="18" fill="#0A0716" stroke="rgba(239,234,251,.14)"/>
+
+          <g id="zone-piste" class="zone" data-zone="piste">
+            <rect x="30" y="104" width="326" height="282" rx="16" fill="rgba(255,178,36,.07)" stroke="rgba(255,178,36,.45)" stroke-width="1.5"/>
+            <path d="M120 150 H266 A46 46 0 0 1 266 242 H180 A34 34 0 0 0 180 310 H120 A46 46 0 0 1 120 218 H160 A34 34 0 0 0 160 150 Z"
+                  fill="none" stroke="#FFB224" stroke-width="16" stroke-linejoin="round" opacity=".9"/>
+            <path d="M120 150 H266 A46 46 0 0 1 266 242 H180 A34 34 0 0 0 180 310 H120 A46 46 0 0 1 120 218 H160 A34 34 0 0 0 160 150 Z"
+                  fill="none" stroke="#0A0716" stroke-width="2" stroke-dasharray="10 12" opacity=".6"/>
+            <text x="48" y="136" class="zlab">Piste</text>
+            <text x="120" y="136" class="zlab zlab-sm">1000 m²</text>
+          </g>
+
+          <g id="zone-accueil" class="zone" data-zone="accueil">
+            <rect x="30" y="30" width="326" height="58" rx="12" fill="rgba(239,234,251,.06)" stroke="rgba(239,234,251,.30)" stroke-width="1.5"/>
+            <text x="48" y="65" class="zlab zlab-sm">Accueil, casques &amp; briefing</text>
+          </g>
+
+          <g id="zone-billard" class="zone" data-zone="billard">
+            <rect x="374" y="30" width="148" height="104" rx="12" fill="rgba(53,224,208,.10)" stroke="#35E0D0" stroke-width="1.5"/>
+            <text x="448" y="66" class="zlab zlab-sm" text-anchor="middle">Billard</text>
+            <circle cx="424" cy="96" r="7" fill="#35E0D0"/>
+            <circle cx="448" cy="96" r="7" fill="#EFEAFB" opacity=".55"/>
+            <circle cx="472" cy="96" r="7" fill="#FFB224"/>
+          </g>
+
+          <g id="zone-food" class="zone" data-zone="food">
+            <rect x="374" y="150" width="148" height="104" rx="12" fill="rgba(255,178,36,.10)" stroke="rgba(255,178,36,.75)" stroke-width="1.5"/>
+            <text x="448" y="190" class="zlab zlab-sm" text-anchor="middle">Food truck</text>
+            <text x="448" y="212" class="zlab zlab-xs" text-anchor="middle">&amp; terrasse</text>
+          </g>
+
+          <g id="zone-apprentissage" class="zone" data-zone="apprentissage">
+            <rect x="374" y="270" width="148" height="116" rx="12" fill="rgba(239,234,251,.05)" stroke="rgba(239,234,251,.34)" stroke-width="1.5" stroke-dasharray="9 7"/>
+            <text x="448" y="322" class="zlab zlab-sm" text-anchor="middle">Zone</text>
+            <text x="448" y="344" class="zlab zlab-sm" text-anchor="middle">apprentissage</text>
+          </g>
+        </svg>
+      </div>
+
+      <div class="plan-side">
+        <div class="tabs" role="tablist" aria-label="Zones du complexe">
+          <button role="tab" id="tab-piste" aria-controls="pan-piste" aria-selected="true" data-zone="piste">Piste</button>
+          <button role="tab" id="tab-billard" aria-controls="pan-billard" aria-selected="false" data-zone="billard">Billard</button>
+          <button role="tab" id="tab-food" aria-controls="pan-food" aria-selected="false" data-zone="food">Food truck</button>
+          <button role="tab" id="tab-apprentissage" aria-controls="pan-apprentissage" aria-selected="false" data-zone="apprentissage">Apprentissage</button>
+          <button role="tab" id="tab-accueil" aria-controls="pan-accueil" aria-selected="false" data-zone="accueil">Accueil</button>
+        </div>
+
+        <div class="pan" id="pan-piste" role="tabpanel" aria-labelledby="tab-piste">
+          <h3>1000 m² de tracé sur mesure</h3>
+          <p>Le plus grand espace de drift kart indoor de Guadeloupe. Un tracé technique, des virages enchaînés pensés pour la dérive, et des karts Type&nbsp;3 à moteur électrique.</p>
+          <dl class="facts">
+            <div><dt>Surface</dt><dd>1000 m²</dd></div>
+            <div><dt>Session</dt><dd>10 minutes</dd></div>
+            <div><dt>Karts</dt><dd>Type 3, électriques</dd></div>
+          </dl>
+        </div>
+        <div class="pan" id="pan-billard" role="tabpanel" aria-labelledby="tab-billard" hidden>
+          <h3>Le billard, à deux pas de la piste</h3>
+          <p>Entre deux sessions, on pose le casque et on prend la queue. Les tables sont dans le même hangar&nbsp;: de quoi faire tourner un groupe sans que personne n'attende dehors.</p>
+          <dl class="facts">
+            <div><dt>Accès</dt><dd>Sur place</dd></div>
+            <div><dt>Idéal</dt><dd>Groupes en rotation</dd></div>
+          </dl>
+        </div>
+        <div class="pan" id="pan-food" role="tabpanel" aria-labelledby="tab-food" hidden>
+          <h3>Food truck et terrasse</h3>
+          <p>Le food truck reste ouvert pendant les sessions, et jusqu'à la fermeture les soirs de nocturne. Boissons fraîches, de quoi manger, et une terrasse pour souffler entre deux séries.</p>
+          <dl class="facts">
+            <div><dt>Ouvert</dt><dd>Pendant les sessions</dd></div>
+            <div><dt>Nocturne</dt><dd>Vendredi et samedi</dd></div>
+          </dl>
+        </div>
+        <div class="pan" id="pan-apprentissage" role="tabpanel" aria-labelledby="tab-apprentissage" hidden>
+          <h3>Une zone pour apprendre</h3>
+          <p>Un espace réservé à la prise en main&nbsp;: on découvre la barre de glisse au calme, à l'écart du tracé principal, avant de se lancer sur la piste.</p>
+          <dl class="facts">
+            <div><dt>À partir de</dt><dd>1 m 20</dd></div>
+            <div><dt>Poids max</dt><dd>110 kg</dd></div>
+          </dl>
+        </div>
+        <div class="pan" id="pan-accueil" role="tabpanel" aria-labelledby="tab-accueil" hidden>
+          <h3>Accueil, casques et briefing</h3>
+          <p>On récupère casque et gants, on écoute le briefing de pilotage, on repart vers la piste. Prévoyez des chaussures fermées, c'est obligatoire pour monter dans un kart.</p>
+          <dl class="facts">
+            <div><dt>Fourni</dt><dd>Casque et gants</dd></div>
+            <div><dt>Obligatoire</dt><dd>Chaussures fermées</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TARIFS ================= -->
+<section class="sec" id="tarifs">
+  <div class="wrap">
+    <div class="rule reveal" aria-hidden="true"></div>
+    <h2>Tarifs</h2>
+    <p class="lede lede-w">Un tarif unique, sans abonnement ni frais de dossier. À partir de 8&nbsp;pilotes, le prix par personne baisse&nbsp;: c'est le tarif tribu.</p>
+
+    <div class="price-grid">
+      <article class="price">
+        <p class="price-kind">La session</p>
+        <p class="price-fig"><span>15</span><span class="price-cur">€</span></p>
+        <p class="price-unit">10 minutes de piste, par pilote</p>
+        <ul class="price-list">
+          <li>Briefing de pilotage avant chaque départ</li>
+          <li>Casque et gants fournis</li>
+          <li>Dès 1 m 20, 110 kg maximum</li>
+          <li>Chaussures fermées obligatoires</li>
+        </ul>
+        <a class="btn" href="tel:+590690525083">Réserver au 0690 52 50 83</a>
+      </article>
+
+      <article class="calc">
+        <h3>Estimez votre sortie</h3>
+        <p class="calc-hint">Déplacez les curseurs pour voir le budget de votre groupe.</p>
+
+        <label class="field" for="pilots">
+          <span class="field-lab">Pilotes</span>
+          <output class="field-out" id="pilots-out">4</output>
+          <input type="range" id="pilots" min="1" max="30" step="1" value="4">
+        </label>
+
+        <label class="field" for="sessions">
+          <span class="field-lab">Sessions par pilote</span>
+          <output class="field-out" id="sessions-out">2</output>
+          <input type="range" id="sessions" min="1" max="6" step="1" value="2">
+        </label>
+
+        <div class="calc-out">
+          <p class="calc-total"><span id="total">120</span> €</p>
+          <p class="calc-detail" id="detail">4 pilotes × 2 sessions × 15 €</p>
+          <p class="calc-time" id="time">80 minutes de piste au total</p>
+        </div>
+
+        <p class="calc-tribu" id="tribu" hidden>
+          Vous êtes 8 ou plus&nbsp;: le tarif dégressif s'applique, le montant réel sera inférieur.
+          <a href="#" id="quote">Demander un devis sur WhatsApp</a>
+        </p>
+      </article>
+    </div>
+
+    <div class="privat reveal">
+      <h3>Privatisation</h3>
+      <p>Le complexe se réserve en entier pour un anniversaire, une sortie de comité d'entreprise, un team building, un EVJF ou un EVG. Piste, billard et food truck compris, avec un créneau à vous seul.</p>
+      <a class="btn btn-ghost" href="https://wa.me/590690525083?text=Bonjour%20Drift%20House%2C%20je%20souhaite%20privatiser%20le%20complexe." target="_blank" rel="noopener">Parler d'une privatisation</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HORAIRES ================= -->
+<section class="sec sec-hours" id="horaires">
+  <div class="wrap">
+    <div class="rule reveal" aria-hidden="true"></div>
+    <div class="hours-head">
+      <h2>Horaires</h2>
+      <p class="hours-live" id="hours-live">—</p>
+    </div>
+    <p class="lede lede-w">Deux nocturnes par semaine, vendredi et samedi, jusqu'à 1&nbsp;h du matin. Pendant les vacances scolaires, le complexe ouvre tous les jours de 15&nbsp;h à 23&nbsp;h.</p>
+
+    <ul class="week" id="week">
+      <li data-day="1"><span class="week-d">Lundi</span><span class="week-h">Fermé</span></li>
+      <li data-day="2"><span class="week-d">Mardi</span><span class="week-h">Fermé</span></li>
+      <li data-day="3"><span class="week-d">Mercredi</span><span class="week-h">14 h – 20 h</span></li>
+      <li data-day="4"><span class="week-d">Jeudi</span><span class="week-h">Fermé</span></li>
+      <li data-day="5" class="week-late"><span class="week-d">Vendredi</span><span class="week-h">14 h – 1 h</span><span class="week-tag">Nocturne</span></li>
+      <li data-day="6" class="week-late"><span class="week-d">Samedi</span><span class="week-h">10 h – 1 h</span><span class="week-tag">Nocturne</span></li>
+      <li data-day="0"><span class="week-d">Dimanche</span><span class="week-h">10 h – 20 h</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= ACCÈS ================= -->
+<section class="sec sec-acces" id="acces">
+  <div class="wrap">
+    <div class="rule reveal" aria-hidden="true"></div>
+    <h2>Nous trouver</h2>
+    <div class="acces">
+      <div class="acces-txt">
+        <p class="addr">Roujol<br>97170 Petit-Bourg<br>Guadeloupe</p>
+        <p class="lede">En bord de route à Roujol, entre Pointe-à-Pitre et Basse-Terre. Parking sur place.</p>
+        <a class="btn" href="https://www.google.com/maps/place/Drift+House/@16.1793249,-61.5926554,17z/data=!3m1!4b1!4m6!3m5!1s0x8c1345c2f95b800f:0xef49349f346b7669!8m2!3d16.1793249!4d-61.5900751" target="_blank" rel="noopener">Ouvrir dans Google Maps</a>
+      </div>
+      <ul class="contact">
+        <li><span>Téléphone</span><a href="tel:+590690525083">0690 52 50 83</a></li>
+        <li><span>WhatsApp</span><a href="https://wa.me/message/4WR5AUIBLDCEH1" target="_blank" rel="noopener">Écrire au complexe</a></li>
+        <li><span>Instagram</span><a href="https://www.instagram.com/drifthousekarting/" target="_blank" rel="noopener">@drifthousekarting</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p class="foot-brand">Drift House</p>
+    <p class="foot-line">Karting drift, billard et food truck — Roujol, 97170 Petit-Bourg, Guadeloupe.</p>
+    <p class="foot-small">© <span id="year">2026</span> Drift House. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<div class="dock" aria-label="Contact rapide">
+  <a class="dock-a" href="tel:+590690525083">Appeler</a>
+  <a class="dock-a dock-a-alt" href="https://wa.me/message/4WR5AUIBLDCEH1" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
