@@ -51,27 +51,34 @@ python3 -m http.server 8000     # puis http://localhost:8000
 
 ## 3. Remplacer les images
 
-Les visuels livrés sont des **plaques d'ambiance abstraites**, générées pour que le site
-soit présentable tout de suite. Ce sont des bouche-trous : à échanger contre de vraies photos.
+Les visuels livrés sont de **vraies photos libres de droits** (domaine public / CC0, via
+Openverse), recadrées et étalonnées par mes soins dans la palette du site. Elles ne montrent
+pas vos maisons : elles sont là pour que le site soit présentable tout de suite, à remplacer
+par votre reportage photo.
 
 Gardez les mêmes noms de fichiers, rien d'autre à toucher :
 
 | Fichier | Usage | Format conseillé |
 |---|---|---|
-| `m-01.jpg` … `m-06.jpg` | les six maisons | portrait 4/5, 1400 × 1750 px |
+| `m-01.jpg` … `m-06.jpg` | les six maisons, dans l'ordre d'affichage | portrait 4/5, 1400 × 1750 px |
 | `w-01.jpg` | grande image de la section « Karukera » | paysage, 1800 × 1100 px |
-| `s-01.jpg` … `s-08.jpg` | services et expériences | portrait, 760 × 950 px |
+| `s-01.jpg` … `s-05.jpg` | les cinq lignes de la section Conciergerie | portrait 4/5, 760 × 950 px |
+| `x-01.jpg` … `x-08.jpg` | les huit cartes du carrousel Expériences | portrait 4/5, 760 × 950 px |
 | `og.jpg` | vignette de partage WhatsApp / réseaux | 1200 × 630 px |
 | `assets/favicon.svg` | icône d'onglet | — |
 
+Ordre exact des cartes Expériences : `x-01` location de voiture, `x-02` excursion en bateau,
+`x-03` arrivée ou départ tardif, `x-04` chef à domicile, `x-05` transfert aéroport,
+`x-06` massage à la villa, `x-07` courses avant arrivée, `x-08` berceau et lit d'appoint.
+Ce sont celles qui gagnent le plus à être remplacées : les photos actuelles sont
+atmosphériques mais ne montrent ni voiture, ni chef, ni transfert.
+
 Conseils de prise de vue, vu le parti pris graphique : lumière de fin de journée, cadrages
 serrés sur les matières (bois, chaux, eau), pas de grand-angle immobilier. Compressez en JPEG
-qualité 80 (sur squoosh.app par exemple) : sous 300 ko par image, le site reste rapide.
+qualité 80 (sur squoosh.app par exemple) : sous 350 ko par image, le site reste rapide.
 
-Les deux mêmes fichiers `s-XX.jpg` servent parfois à deux endroits ; si vous voulez des visuels
-distincts partout, ajoutez `s-09.jpg`, `s-10.jpg` et mettez à jour les `src` correspondants.
-
----
+Si vous remplacez tout par vos photos, pensez à conserver l'étalonnage : un passage
+léger vers les verts-bleus profonds suffit à ce que l'ensemble reste homogène.
 
 ## 4. Faire fonctionner le formulaire
 
@@ -104,10 +111,15 @@ assets/img/                images
 vercel.json                URLs propres + cache des fichiers statiques
 ```
 
-**Direction artistique.** Fond vert marine très sombre, ivoire, lagon pâle, sable.
+**Direction artistique.** Fond vert marine très sombre, ivoire, turquoise de lagon, sable doré.
 Bodoni Moda pour les titres (forte opposition pleins / déliés, c'est ce qui donne le côté
 maison de luxe), Archivo en léger pour le texte courant. Les couleurs sont regroupées dans
 les variables `:root` au début de `main.css` : en changer une suffit à repeindre tout le site.
+
+Le grand « Karaya » du hero utilise l'axe optique de Bodoni Moda forcé à une petite valeur
+(`font-variation-settings:"opsz" 10`). Sans ça, le navigateur pousse l'axe à son maximum
+à cette taille, les déliés deviennent des cheveux et le mot se perd sur le fond animé.
+Si vous changez la taille du logotype, gardez cette règle.
 
 **Animations.**
 
@@ -125,7 +137,11 @@ les variables `:root` au début de `main.css` : en changer une suffit à repeind
 Tout est désactivé si le visiteur a demandé de réduire les animations dans son système
 (`prefers-reduced-motion`), et le site reste entièrement navigable au clavier.
 
-**Performances.** Environ 2,5 Mo au total, dont l'essentiel en images ; aucune requête vers
+**Crédits photo.** Les images livrées viennent d'Openverse, uniquement des visuels en
+domaine public ou sous licence CC0 : libres d'usage, y compris commercial, sans attribution
+obligatoire. Elles ont été recadrées et étalonnées.
+
+**Performances.** Environ 3,5 Mo au total, dont l'essentiel en images ; aucune requête vers
 un serveur tiers, donc rien à déclarer côté cookies ou consentement.
 
 ---

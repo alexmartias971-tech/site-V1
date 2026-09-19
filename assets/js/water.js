@@ -85,18 +85,18 @@
     "  float light = c1 * 0.62 * (0.18 + mask) + c2 * 0.3 * mask;",
 
     // palette
-    "  vec3 abyss  = vec3(0.027, 0.078, 0.071);",
-    "  vec3 sea    = vec3(0.063, 0.180, 0.169);",
-    "  vec3 lagoon = vec3(0.24,  0.47,  0.45);",
-    "  vec3 foam   = vec3(0.82,  0.89,  0.86);",
+    "  vec3 abyss  = vec3(0.016, 0.082, 0.102);",
+    "  vec3 sea    = vec3(0.055, 0.267, 0.251);",
+    "  vec3 lagoon = vec3(0.306, 0.780, 0.690);",
+    "  vec3 foam   = vec3(0.85,  0.94,  0.89);",
 
     "  float depth = smoothstep(-0.15, 1.15, uv.y);",
     "  vec3 col = mix(abyss, sea, depth);",
-    "  float halo = exp(-distance(vec2(uv.x * asp, uv.y), vec2(0.70 * asp, 0.90)) * 1.35);",
-    "  col = mix(col, lagoon, halo * 0.6);",
-    "  col = mix(col, lagoon * 1.15, ripple * 0.3);",
+    "  float halo = exp(-distance(vec2(uv.x * asp, uv.y), vec2(0.74 * asp, 0.92)) * 1.25);",
+    "  col = mix(col, lagoon, halo * 0.72);",
+    "  col = mix(col, lagoon * 1.1, ripple * 0.32);",
 
-    "  col += foam * light * (0.07 + 0.30 * depth * depth);",
+    "  col += foam * light * (0.10 + 0.36 * depth * depth);",
     "  col += foam * ripple * 0.06;",
 
     // vignette + léger grain
